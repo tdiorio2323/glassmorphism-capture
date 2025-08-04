@@ -42,7 +42,14 @@ const EmailCaptureCard = () => {
           />
         </div>
 
-        {/* Video content area */}
+        {/* Headline Text */}
+        <div className="text-center px-4 pb-4">
+          <h1 className="text-white font-bebas text-2xl leading-tight tracking-wide">
+            OVER 100+ ORIGINAL<br />DESIGNS TO CHOOSE FROM
+          </h1>
+        </div>
+
+        {/* Video content area - moved down */}
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative" style={{ height: 'calc(157px + 50px)' }}>
             <div className="flex animate-conveyor-belt" style={{ width: `${images.length * 2 * 150}px` }}>
@@ -57,31 +64,6 @@ const EmailCaptureCard = () => {
             </div>
           </div>
         </div>
-
-        {/* Email capture form at bottom */}
-        <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Email Input */}
-          <div className="relative">
-            <Input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="STAY IN THE LOOP"
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 font-bebas text-lg placeholder:text-white/60 text-white focus:border-white/30 focus:ring-2 focus:ring-primary/50 backdrop-blur-sm"
-              required
-            />
-          </div>
-
-          {/* Green Glossy Submit Button */}
-          <Button
-            type="submit"
-            className="w-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-400 hover:to-green-600 text-white font-bold py-3 rounded-full shadow-lg border border-green-600 transition-all duration-300 relative overflow-hidden group"
-          >
-            <span className="relative z-10 font-bebas text-lg tracking-wide">SUBMIT</span>
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/20 to-white/40 rounded-full" />
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/10 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
-          </Button>
-        </form>
       </div>
     </div>
   );

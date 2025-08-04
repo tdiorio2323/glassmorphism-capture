@@ -25,9 +25,22 @@ const EmailCaptureCard = () => {
           />
         </div>
 
-        {/* Top space for user content */}
-        <div className="flex-1">
-          {/* User will fill this space */}
+        {/* Video content area */}
+        <div className="flex-1 flex items-center justify-center p-4">
+          <div className="w-full max-w-[280px] aspect-video rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
+            <video 
+              className="w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/your-video.mp4" type="video/mp4" />
+              <div className="w-full h-full flex items-center justify-center text-white/60 text-sm">
+                Video not supported
+              </div>
+            </video>
+          </div>
         </div>
 
         {/* Email capture form at bottom */}

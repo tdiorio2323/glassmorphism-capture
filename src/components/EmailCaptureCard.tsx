@@ -27,7 +27,7 @@ const EmailCaptureCard = () => {
 
         {/* Video content area */}
         <div className="flex-1 flex items-center justify-center p-4">
-          <div className="w-full max-w-[280px] aspect-video rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10">
+          <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10" style={{ height: 'calc(157px + 50px)', paddingTop: '25px', paddingBottom: '25px' }}>
             <video 
               className="w-full h-full object-cover"
               autoPlay

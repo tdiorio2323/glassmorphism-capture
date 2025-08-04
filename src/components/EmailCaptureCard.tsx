@@ -44,13 +44,14 @@ const EmailCaptureCard = () => {
             />
           </div>
 
-          {/* Chrome Submit Button */}
+          {/* Green Glossy Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-gradient-to-b from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white font-medium py-3 rounded-xl shadow-chrome border border-gray-600 transition-all duration-300 relative overflow-hidden group"
+            className="w-full bg-gradient-to-b from-green-400 to-green-600 hover:from-green-300 hover:to-green-500 text-white font-bold py-3 rounded-full shadow-lg border border-green-500 transition-all duration-300 relative overflow-hidden group"
           >
-            <span className="relative z-10">Submit</span>
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <span className="relative z-10 font-bebas text-lg tracking-wide">SUBMIT</span>
+            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/20 to-white/40 rounded-full" />
+            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/10 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
           </Button>
         </form>
       </div>

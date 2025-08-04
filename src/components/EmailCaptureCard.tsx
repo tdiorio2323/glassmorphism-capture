@@ -40,8 +40,11 @@ const EmailCaptureCard = () => {
         <div className="px-4 pb-[5px]">
         </div>
 
-        {/* Video content area - moved up */}
-        <div className="flex-1 flex items-center justify-center px-4 pt-0 pb-4">
+        {/* Spacer to push video and button to bottom */}
+        <div className="flex-1"></div>
+
+        {/* Video content area - positioned above button */}
+        <div className="flex items-center justify-center px-4 pt-0 pb-[10px]">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative" style={{ height: 'calc(157px + 50px)' }}>
             <div className="flex animate-conveyor-belt" style={{ width: `${images.length * 2 * 150}px` }}>
               {duplicatedImages.map((image, index) => (

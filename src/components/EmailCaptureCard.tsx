@@ -38,8 +38,8 @@ const EmailCaptureCard = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="email address"
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 font-bebas text-lg placeholder:text-gray-400 text-white focus:border-white/30 focus:ring-2 focus:ring-primary/50 backdrop-blur-sm"
+              placeholder="STAY IN THE LOOP"
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 font-bebas text-lg placeholder:text-white/60 text-white focus:border-white/30 focus:ring-2 focus:ring-primary/50 backdrop-blur-sm"
               required
             />
           </div>

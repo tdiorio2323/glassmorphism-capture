@@ -45,7 +45,7 @@ const EmailCaptureCard = () => {
         {/* Video content area */}
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative" style={{ height: 'calc(157px + 50px)' }}>
-            <div className="absolute inset-0 flex animate-conveyor-belt">
+            <div className="flex animate-conveyor-belt" style={{ width: `${images.length * 2 * 150}px` }}>
               {duplicatedImages.map((image, index) => (
                 <img
                   key={index}

@@ -47,7 +47,7 @@ const EmailCaptureCard = () => {
           {/* Green Glossy Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-gradient-to-b from-green-400 to-green-600 hover:from-green-300 hover:to-green-500 text-white font-bold py-3 rounded-full shadow-lg border border-green-500 transition-all duration-300 relative overflow-hidden group"
+            className="w-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-400 hover:to-green-600 text-white font-bold py-3 rounded-full shadow-lg border border-green-600 transition-all duration-300 relative overflow-hidden group"
           >
             <span className="relative z-10 font-bebas text-lg tracking-wide">SUBMIT</span>
             <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/20 to-white/40 rounded-full" />

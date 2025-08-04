@@ -52,16 +52,16 @@ const EmailCaptureCard = () => {
         {/* Video content area - moved up */}
         <div className="flex-1 flex items-center justify-center px-4 pt-0 pb-4">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative" style={{ height: 'calc(157px + 50px)' }}>
-            <div className="flex animate-conveyor-belt" style={{ width: `${images.length * 2 * 150}px` }}>
-              {duplicatedImages.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`Product ${index + 1}`}
-                  className="w-[150px] h-full object-contain flex-shrink-0"
-                />
-              ))}
-            </div>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+              src="/lovable-uploads/reel-slideshow.mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 

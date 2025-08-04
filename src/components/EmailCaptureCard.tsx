@@ -7,15 +7,16 @@ const EmailCaptureCard = () => {
   
   // Using the newly uploaded product images
   const images = [
-    "/lovable-uploads/624ab187-eba8-4c79-97ee-8179bdfc60ce.png",
-    "/lovable-uploads/faed02fe-70be-4025-b9c7-d0c65669e600.png",
-    "/lovable-uploads/ec0df8f3-0f51-40a2-b6e5-c4c89ba1c6cf.png",
-    "/lovable-uploads/7a5ed7d7-e637-49c3-8040-aeb953a07608.png",
     "/lovable-uploads/3273d74f-d063-4b96-b731-90c645b2ca87.png",
     "/lovable-uploads/5d4be55a-4a44-4494-8f43-17b706d2e668.png",
-    "/lovable-uploads/eac43ff5-aed9-4e0a-a991-025e052eadd8.png",
+    "/lovable-uploads/624ab187-eba8-4c79-97ee-8179bdfc60ce.png",
+    "/lovable-uploads/7a5ed7d7-e637-49c3-8040-aeb953a07608.png",
+    "/lovable-uploads/7d1b869c-3d48-4658-b6d9-8ec465fda625.png",
+    "/lovable-uploads/88ebf753-494e-4d4d-808a-7115b62f1c3f.png",
     "/lovable-uploads/be7010db-b090-46da-8f96-be7b7ac4399b.png",
-    "/lovable-uploads/7d1b869c-3d48-4658-b6d9-8ec465fda625.png"
+    "/lovable-uploads/eac43ff5-aed9-4e0a-a991-025e052eadd8.png",
+    "/lovable-uploads/ec0df8f3-0f51-40a2-b6e5-c4c89ba1c6cf.png",
+    "/lovable-uploads/faed02fe-70be-4025-b9c7-d0c65669e600.png"
   ];
   
   // Duplicate images for seamless looping
@@ -50,7 +51,7 @@ const EmailCaptureCard = () => {
                   key={index}
                   src={image}
                   alt={`Product ${index + 1}`}
-                  className="w-full h-full object-contain flex-shrink-0"
+                  className="w-[150px] h-full object-contain flex-shrink-0"
                 />
               ))}
             </div>

@@ -19,7 +19,7 @@ const Index = () => {
           rel="noopener noreferrer"
           className="block text-white font-bebas text-xl tracking-wider hover:text-green-400 transition-colors duration-300 text-shadow-lg"
         >
-          <div className="w-[320px] mx-auto">PLACE YOUR ORDER TODAY</div>
+          <div className="w-[330px] mx-auto">PLACE YOUR ORDER TODAY</div>
           <div className="w-[330px] mx-auto">WWW.BAGMANPACK.COM</div>
         </a>
       </div>

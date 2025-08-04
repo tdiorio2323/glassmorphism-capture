@@ -33,20 +33,11 @@ const EmailCaptureCard = () => {
       {/* Glass Morphism Card */}
       <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
         
-        {/* Logo Section */}
-        <div className="flex justify-center items-center pt-4 pb-4">
-          <img 
-            src="/lovable-uploads/c954f561-d572-4e24-ac9a-63fd1d23bbed.png" 
-            alt="Bag Man NY Logo" 
-            className="w-32 h-auto"
-          />
+        {/* Empty space where logo and text were */}
+        <div className="pt-4 pb-4">
         </div>
 
-        {/* Headline Text */}
-        <div className="text-center px-4 pb-[5px]">
-          <h1 className="text-white font-bebas text-2xl leading-tight tracking-wide">
-            OVER 100+ ORIGINAL<br />DESIGNS TO CHOOSE FROM
-          </h1>
+        <div className="px-4 pb-[5px]">
         </div>
 
         {/* Video content area - moved up */}

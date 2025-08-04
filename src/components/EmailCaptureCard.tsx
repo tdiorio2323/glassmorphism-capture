@@ -11,7 +11,7 @@ const EmailCaptureCard = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prev) => (prev + 1) % words.length);
-    }, 1000);
+    }, 500);
     
     return () => clearInterval(interval);
   }, [words.length]);
@@ -39,7 +39,7 @@ const EmailCaptureCard = () => {
         {/* Video content area */}
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 flex items-center justify-center" style={{ height: 'calc(157px + 50px)', paddingTop: '25px', paddingBottom: '25px' }}>
-            <div className="text-white font-bebas text-4xl font-bold tracking-wider animate-pulse">
+            <div className="text-white font-bebas text-5xl font-bold tracking-wider animate-pulse drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] w-[200px] text-center">
               {words[currentWordIndex]}
             </div>
           </div>

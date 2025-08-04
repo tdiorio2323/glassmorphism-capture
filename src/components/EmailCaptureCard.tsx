@@ -14,7 +14,7 @@ const EmailCaptureCard = () => {
   return (
     <div className="w-[350px] h-[550px] max-w-[390px] mx-auto">
       {/* Glass Morphism Card */}
-      <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass p-6 flex flex-col">
+      <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col">
         
         {/* Top space for user content */}
         <div className="flex-1">
@@ -38,7 +38,7 @@ const EmailCaptureCard = () => {
           {/* Chrome Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-gradient-to-b from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white font-medium py-3 rounded-xl shadow-chrome border border-gray-600 shadow-green-glow hover:shadow-green-glow transition-all duration-300 relative overflow-hidden group"
+            className="w-full bg-gradient-to-b from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white font-medium py-3 rounded-xl shadow-chrome border border-gray-600 transition-all duration-300 relative overflow-hidden group"
           >
             <span className="relative z-10">Submit</span>
             <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

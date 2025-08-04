@@ -14,7 +14,7 @@ const EmailCaptureCard = () => {
   return (
     <div className="w-[330px] h-[550px] max-w-[390px] mx-auto">
       {/* Glass Morphism Card */}
-      <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col">
+      <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
         
         {/* Logo Section */}
         <div className="flex justify-center items-center pt-4 pb-4">

@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const EmailCaptureCard = () => {
   const [email, setEmail] = useState("");
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  
+  const words = ["BAGS", "BOXES", "JARS", "DESIGNS", "ANIMATIONS"];
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+    }, 1000);
+    
+    return () => clearInterval(interval);
+  }, [words.length]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,19 +38,10 @@ const EmailCaptureCard = () => {
 
         {/* Video content area */}
         <div className="flex-1 flex items-center justify-center p-4">
-          <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10" style={{ height: 'calc(157px + 50px)', paddingTop: '25px', paddingBottom: '25px' }}>
-            <video 
-              className="w-full h-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src="/your-video.mp4" type="video/mp4" />
-              <div className="w-full h-full flex items-center justify-center text-white/60 text-sm">
-                Video not supported
-              </div>
-            </video>
+          <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 flex items-center justify-center" style={{ height: 'calc(157px + 50px)', paddingTop: '25px', paddingBottom: '25px' }}>
+            <div className="text-white font-bebas text-4xl font-bold tracking-wider animate-pulse">
+              {words[currentWordIndex]}
+            </div>
           </div>
         </div>
 

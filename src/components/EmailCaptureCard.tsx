@@ -50,7 +50,7 @@ const EmailCaptureCard = () => {
                   key={index}
                   src={image}
                   alt={`Product ${index + 1}`}
-                  className="w-full h-full object-cover flex-shrink-0"
+                  className="w-full h-full object-contain flex-shrink-0"
                 />
               ))}
             </div>

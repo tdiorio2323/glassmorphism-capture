@@ -7,16 +7,16 @@ const EmailCaptureCard = () => {
   
   // Using the newly uploaded product images
   const images = [
-    "/lovable-uploads/3273d74f-d063-4b96-b731-90c645b2ca87.png",
-    "/lovable-uploads/5d4be55a-4a44-4494-8f43-17b706d2e668.png",
-    "/lovable-uploads/624ab187-eba8-4c79-97ee-8179bdfc60ce.png",
-    "/lovable-uploads/7a5ed7d7-e637-49c3-8040-aeb953a07608.png",
-    "/lovable-uploads/7d1b869c-3d48-4658-b6d9-8ec465fda625.png",
-    "/lovable-uploads/88ebf753-494e-4d4d-808a-7115b62f1c3f.png",
-    "/lovable-uploads/be7010db-b090-46da-8f96-be7b7ac4399b.png",
-    "/lovable-uploads/eac43ff5-aed9-4e0a-a991-025e052eadd8.png",
-    "/lovable-uploads/ec0df8f3-0f51-40a2-b6e5-c4c89ba1c6cf.png",
-    "/lovable-uploads/faed02fe-70be-4025-b9c7-d0c65669e600.png"
+    "/lovable-uploads/dcd2cf43-eede-4c6a-b562-9cf0069295fa.png",
+    "/lovable-uploads/2a51bed4-5b53-41a2-be4d-8fb36da4a313.png",
+    "/lovable-uploads/30ceffb3-8a31-484b-a710-bdbf2e3859ba.png",
+    "/lovable-uploads/ede27745-49e5-453a-840c-d7e2fd460ae9.png",
+    "/lovable-uploads/9d28edef-a31d-49be-8d80-79d35a636104.png",
+    "/lovable-uploads/309b544c-fdba-480c-bf87-8de4cd304f69.png",
+    "/lovable-uploads/b258139b-0e07-4e99-b593-1ee1cd7410f8.png",
+    "/lovable-uploads/5dac8c95-b9d9-4188-9290-4c7ba116b611.png",
+    "/lovable-uploads/a96cb7b2-3323-43c5-8649-5574d857fe1e.png",
+    "/lovable-uploads/47c4142d-ee68-45ac-a93a-cf9355f952f0.png"
   ];
   
   // Duplicate images for seamless looping

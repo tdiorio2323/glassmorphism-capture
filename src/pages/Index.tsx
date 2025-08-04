@@ -12,7 +12,7 @@ const Index = () => {
       }}
     >
       <EmailCaptureCard />
-      <div className="mt-4 w-[300px] text-center">
+      <div className="mt-4 w-[320px] text-center">
         <a 
           href="https://www.bagmanpack.com" 
           target="_blank" 

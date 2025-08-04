@@ -5,15 +5,21 @@ import { Input } from "@/components/ui/input";
 const EmailCaptureCard = () => {
   const [email, setEmail] = useState("");
   
-  // Using only the images that actually exist in the project
+  // Using the newly uploaded product images
   const images = [
-    "/lovable-uploads/1ca97aca-69f6-434a-81a2-edcf50a74b4c.png",
-    "/lovable-uploads/88ebf753-494e-4d4d-808a-7115b62f1c3f.png",
-    "/lovable-uploads/c954f561-d572-4e24-ac9a-63fd1d23bbed.png"
+    "/lovable-uploads/624ab187-eba8-4c79-97ee-8179bdfc60ce.png",
+    "/lovable-uploads/faed02fe-70be-4025-b9c7-d0c65669e600.png",
+    "/lovable-uploads/ec0df8f3-0f51-40a2-b6e5-c4c89ba1c6cf.png",
+    "/lovable-uploads/7a5ed7d7-e637-49c3-8040-aeb953a07608.png",
+    "/lovable-uploads/3273d74f-d063-4b96-b731-90c645b2ca87.png",
+    "/lovable-uploads/5d4be55a-4a44-4494-8f43-17b706d2e668.png",
+    "/lovable-uploads/eac43ff5-aed9-4e0a-a991-025e052eadd8.png",
+    "/lovable-uploads/be7010db-b090-46da-8f96-be7b7ac4399b.png",
+    "/lovable-uploads/7d1b869c-3d48-4658-b6d9-8ec465fda625.png"
   ];
   
-  // Duplicate images multiple times for more variety in the conveyor belt
-  const duplicatedImages = [...images, ...images, ...images, ...images];
+  // Duplicate images for seamless looping
+  const duplicatedImages = [...images, ...images];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

@@ -16,6 +16,15 @@ const EmailCaptureCard = () => {
       {/* Glass Morphism Card */}
       <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col">
         
+        {/* Logo Section */}
+        <div className="flex justify-center items-center pt-8 pb-4">
+          <img 
+            src="/lovable-uploads/c954f561-d572-4e24-ac9a-63fd1d23bbed.png" 
+            alt="Bag Man NY Logo" 
+            className="w-32 h-auto"
+          />
+        </div>
+
         {/* Top space for user content */}
         <div className="flex-1">
           {/* User will fill this space */}

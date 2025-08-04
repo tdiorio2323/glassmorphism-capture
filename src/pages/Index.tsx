@@ -4,7 +4,7 @@ import diamondBackground from "@/assets/diamond-background.jpg";
 const Index = () => {
   return (
     <div 
-      className="min-h-screen overflow-hidden flex flex-col justify-start items-center pt-[30px] p-4"
+      className="min-h-screen overflow-hidden flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url('${diamondBackground}')`,
         backgroundSize: 'cover',

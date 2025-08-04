@@ -29,7 +29,7 @@ const EmailCaptureCard = () => {
   };
 
   return (
-    <div className="w-[330px] h-[650px] max-w-[390px] mx-auto">
+    <div className="w-[330px] h-[550px] max-w-[390px] mx-auto">
       {/* Glass Morphism Card */}
       <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
         
@@ -44,12 +44,12 @@ const EmailCaptureCard = () => {
         <div className="flex-1"></div>
 
         {/* Logo content area - positioned above button */}
-        <div className="flex items-center justify-center px-4 pt-0 pb-[10px]">
+        <div className="flex items-center justify-center px-8 pt-0 pb-[10px]">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative flex items-center justify-center" style={{ height: 'calc(157px + 50px)' }}>
             <img
               src="/lovable-uploads/a3f340a8-65a2-4326-a67c-6f95884fd4b1.png"
               alt="TD Studios Logo"
-              className="max-w-full max-h-full object-contain p-4"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>

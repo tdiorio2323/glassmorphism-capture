@@ -58,7 +58,7 @@ const EmailCaptureCard = () => {
               muted
               playsInline
               className="w-full h-full object-cover"
-              src="/lovable-uploads/reel-slideshow.mp4"
+              src="http://tdstudiosny.com/reelz/reel-slideshow.mp4"
             >
               Your browser does not support the video tag.
             </video>

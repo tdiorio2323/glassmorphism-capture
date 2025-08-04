@@ -37,6 +37,14 @@ const EmailCaptureCard = () => {
     console.log('🎬 Video load started');
     setVideoLoading(true);
     setDebugInfo('Loading video...');
+    
+    // Add timeout to prevent infinite loading
+    setTimeout(() => {
+      if (videoLoading && !videoLoaded) {
+        console.log('⏰ Video loading timeout');
+        handleVideoError({ target: { error: { code: 2 } } });
+      }
+    }, 8000); // 8 second timeout
   };
 
   const handleVideoCanPlay = () => {

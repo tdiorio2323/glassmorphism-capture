@@ -12,7 +12,7 @@ const EmailCaptureCard = () => {
   };
 
   return (
-    <div className="w-[350px] h-[550px] max-w-[390px] mx-auto">
+    <div className="w-[330px] h-[550px] max-w-[390px] mx-auto">
       {/* Glass Morphism Card */}
       <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col">
         

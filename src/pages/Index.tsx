@@ -3,7 +3,7 @@ import EmailCaptureCard from "@/components/EmailCaptureCard";
 const Index = () => {
   return (
     <div 
-      className="min-h-screen overflow-hidden flex justify-center pt-[10px] p-4"
+      className="min-h-screen overflow-hidden flex flex-col justify-start items-center pt-[10px] p-4"
       style={{
         backgroundImage: `url('/lovable-uploads/1ca97aca-69f6-434a-81a2-edcf50a74b4c.png')`,
         backgroundSize: 'cover',
@@ -12,6 +12,16 @@ const Index = () => {
       }}
     >
       <EmailCaptureCard />
+      <div className="mt-4">
+        <a 
+          href="https://www.bagmanpack.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-white font-bebas text-xl tracking-wider hover:text-green-400 transition-colors duration-300 text-shadow-lg"
+        >
+          WWW.BAGMANPACK.COM
+        </a>
+      </div>
     </div>
   );
 };

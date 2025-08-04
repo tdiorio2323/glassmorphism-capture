@@ -1,27 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const EmailCaptureCard = () => {
   const [email, setEmail] = useState("");
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const images = [
-    "/lovable-uploads/20c20cde-9e12-4c4c-ab65-80d1ac03ce12.png",
-    "/lovable-uploads/ffb600bf-1349-4156-9c20-1fd5bb4653ea.png",
-    "/lovable-uploads/bfa436aa-ecaa-4e4e-9624-504b2e660553.png",
-    "/lovable-uploads/63d66703-1c5c-40a8-864f-a55aca70cb6c.png",
-    "/lovable-uploads/36b099ad-d14b-4344-aad0-04fa0b6938d6.png",
-    "/lovable-uploads/74380a69-9b63-40dc-8a4c-ce32ad95b653.png"
+    "/lovable-uploads/1ca97aca-69f6-434a-81a2-edcf50a74b4c.png",
+    "/lovable-uploads/88ebf753-494e-4d4d-808a-7115b62f1c3f.png",
+    "/lovable-uploads/c954f561-d572-4e24-ac9a-63fd1d23bbed.png"
   ];
   
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 2000);
-    
-    return () => clearInterval(interval);
-  }, [images.length]);
+  // Duplicate images for seamless looping
+  const duplicatedImages = [...images, ...images];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,8 +37,8 @@ const EmailCaptureCard = () => {
         {/* Video content area */}
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative" style={{ height: 'calc(157px + 50px)' }}>
-            <div className="absolute inset-0 flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
-              {images.map((image, index) => (
+            <div className="absolute inset-0 flex animate-conveyor-belt">
+              {duplicatedImages.map((image, index) => (
                 <img
                   key={index}
                   src={image}

@@ -104,12 +104,17 @@ export default {
 				'breathing': {
 					'0%, 100%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-8px)' }
+				},
+				'conveyor-belt': {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-50%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'breathing': 'breathing 4s ease-in-out infinite'
+				'breathing': 'breathing 4s ease-in-out infinite',
+				'conveyor-belt': 'conveyor-belt 12s linear infinite'
 			}
 		}
 	},

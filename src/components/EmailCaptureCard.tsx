@@ -218,7 +218,7 @@ const EmailCaptureCard = () => {
           </div>
 
           {/* Order Now Button */}
-          <div className="mt-4">
+          <div className="mt-4 mb-4">
             <Button
               onClick={handleOrderNow}
               className="w-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-400 hover:to-green-600 text-white font-bold py-3 rounded-full shadow-lg border border-green-600 transition-all duration-300 relative overflow-hidden group"

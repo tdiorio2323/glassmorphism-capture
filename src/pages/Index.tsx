@@ -3,7 +3,7 @@ import EmailCaptureCard from "@/components/EmailCaptureCard";
 const Index = () => {
   return (
     <div 
-      className="min-h-screen overflow-hidden flex items-center justify-center p-4"
+      className="min-h-screen overflow-hidden flex justify-center pt-[10px] p-4"
       style={{
         backgroundImage: `url('/lovable-uploads/1ca97aca-69f6-434a-81a2-edcf50a74b4c.png')`,
         backgroundSize: 'cover',

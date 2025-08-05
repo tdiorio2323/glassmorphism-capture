@@ -48,19 +48,14 @@ const EmailCaptureCard = () => {
         {/* Spacer to push video and button to bottom */}
         <div className="flex-1"></div>
 
-        {/* Video content area - positioned above button */}
+        {/* Promotional content area - positioned above button */}
         <div className="flex items-center justify-center px-4 pt-0 pb-[10px]">
-          <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative" style={{ height: 'calc(157px + 50px)' }}>
-            <div className="flex animate-conveyor-belt" style={{ width: `${images.length * 2 * 150}px` }}>
-              {duplicatedImages.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`Product ${index + 1}`}
-                  className="w-[150px] h-full object-contain flex-shrink-0"
-                />
-              ))}
-            </div>
+          <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative">
+            <img
+              src="/lovable-uploads/880fcfee-3717-4bd0-b183-6d4b586a5833.png"
+              alt="Place Your Order Today"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
 

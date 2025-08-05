@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { removeBackground, loadImage } from "@/utils/backgroundRemoval";
 
 const EmailCaptureCard = () => {
   const [email, setEmail] = useState("");
-  const [logoUrl, setLogoUrl] = useState<string | null>(null);
   
   // Using the newly uploaded product images
   const images = [
@@ -24,30 +22,6 @@ const EmailCaptureCard = () => {
   // Duplicate images for seamless looping
   const duplicatedImages = [...images, ...images];
 
-  useEffect(() => {
-    const processLogo = async () => {
-      try {
-        // Load the original logo image
-        const response = await fetch('/lovable-uploads/8c8a62bd-1521-47f1-90f9-94a4b828322c.png');
-        const blob = await response.blob();
-        const imageElement = await loadImage(blob);
-        
-        // Remove background
-        const processedBlob = await removeBackground(imageElement);
-        
-        // Create URL for the processed image
-        const url = URL.createObjectURL(processedBlob);
-        setLogoUrl(url);
-      } catch (error) {
-        console.error('Failed to process logo:', error);
-        // Fallback to original image
-        setLogoUrl('/lovable-uploads/8c8a62bd-1521-47f1-90f9-94a4b828322c.png');
-      }
-    };
-
-    processLogo();
-  }, []);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Email submitted:", email);
@@ -61,13 +35,11 @@ const EmailCaptureCard = () => {
         
         {/* Logo */}
         <div className="pt-4 pb-4 flex justify-center">
-          {logoUrl && (
-            <img 
-              src={logoUrl} 
-              alt="Quick Printz Logo" 
-              className="max-w-[400px] max-h-[200px] object-contain"
-            />
-          )}
+          <img 
+            src="/lovable-uploads/8c8a62bd-1521-47f1-90f9-94a4b828322c.png" 
+            alt="Quick Printz Logo" 
+            className="max-w-[400px] max-h-[200px] object-contain"
+          />
         </div>
 
         <div className="px-4 pb-[5px]">

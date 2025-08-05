@@ -1,6 +1,8 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
 const EmailCaptureCard = () => {
   const [email, setEmail] = useState("");
 
@@ -14,7 +16,9 @@ const EmailCaptureCard = () => {
     console.log("Email submitted:", email);
     // Handle email submission logic here
   };
-  return <div className="w-[330px] h-[550px] max-w-[390px] mx-auto">
+  
+  return (
+    <div className="w-[330px] h-[550px] max-w-[390px] mx-auto">
       {/* Glass Morphism Card */}
       <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 shadow-glass shadow-card-glow p-6 flex flex-col drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)] rounded-2xl">
         
@@ -25,17 +29,20 @@ const EmailCaptureCard = () => {
         <div className="px-4 pb-[5px]">
         </div>
 
-        {/* Spacer to push video and button to bottom */}
+        {/* Spacer to push content to center */}
         <div className="flex-1"></div>
 
-        {/* Logo content area - positioned above button */}
-        <div className="flex items-center justify-center pt-0 pb-[10px] py-[332px] px-[32px]">
+        {/* Logo content area - centered */}
+        <div className="flex items-center justify-center px-[32px]">
           <div className="w-full max-w-[280px] rounded-xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/10 relative flex items-center justify-center" style={{
           height: 'calc(157px + 50px)'
         }}>
             <img src="/lovable-uploads/a3f340a8-65a2-4326-a67c-6f95884fd4b1.png" alt="TD Studios Logo" className="w-full h-full object-contain" />
           </div>
         </div>
+
+        {/* Equal spacer between logo and button */}
+        <div className="flex-1"></div>
 
         {/* Order Now Button */}
         <div className="px-4 pb-4">
@@ -46,6 +53,8 @@ const EmailCaptureCard = () => {
           </Button>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default EmailCaptureCard;

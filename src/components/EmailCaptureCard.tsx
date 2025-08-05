@@ -59,15 +59,8 @@ const EmailCaptureCard = () => {
           </div>
         </div>
 
-        {/* Order Now Button */}
-        <div className="px-4 pb-4">
-          <Button
-            className="w-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-400 hover:to-green-600 text-white font-bold py-3 rounded-full shadow-lg border border-green-600 transition-all duration-300 relative overflow-hidden group"
-          >
-            <span className="relative z-10 font-bebas text-lg tracking-wide">ORDER NOW</span>
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/20 to-white/40 rounded-full" />
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/10 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
-          </Button>
+        {/* Spacer for button area */}
+        <div className="px-4 pb-4 h-12">
         </div>
       </div>
     </div>

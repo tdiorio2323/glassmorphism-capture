@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { removeBackground, loadImage } from "@/utils/backgroundRemoval";
 
 const EmailCaptureCard = () => {
   const [email, setEmail] = useState("");
+  const [logoUrl, setLogoUrl] = useState<string | null>(null);
   
   // Using the newly uploaded product images
   const images = [
@@ -22,6 +24,30 @@ const EmailCaptureCard = () => {
   // Duplicate images for seamless looping
   const duplicatedImages = [...images, ...images];
 
+  useEffect(() => {
+    const processLogo = async () => {
+      try {
+        // Load the original logo image
+        const response = await fetch('/lovable-uploads/8d6e461e-4393-46d0-9bcc-632a4947a7c2.png');
+        const blob = await response.blob();
+        const imageElement = await loadImage(blob);
+        
+        // Remove background
+        const processedBlob = await removeBackground(imageElement);
+        
+        // Create URL for the processed image
+        const url = URL.createObjectURL(processedBlob);
+        setLogoUrl(url);
+      } catch (error) {
+        console.error('Failed to process logo:', error);
+        // Fallback to original image
+        setLogoUrl('/lovable-uploads/8d6e461e-4393-46d0-9bcc-632a4947a7c2.png');
+      }
+    };
+
+    processLogo();
+  }, []);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Email submitted:", email);
@@ -33,8 +59,15 @@ const EmailCaptureCard = () => {
       {/* Glass Morphism Card */}
       <div className="h-full relative backdrop-blur-glass bg-white/10 border border-white/20 rounded-2xl shadow-glass shadow-card-glow p-6 flex flex-col drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
         
-        {/* Empty space where logo and text were */}
-        <div className="pt-4 pb-4">
+        {/* Logo */}
+        <div className="pt-4 pb-4 flex justify-center">
+          {logoUrl && (
+            <img 
+              src={logoUrl} 
+              alt="Quick Printz Logo" 
+              className="max-w-[200px] max-h-[100px] object-contain"
+            />
+          )}
         </div>
 
         <div className="px-4 pb-[5px]">

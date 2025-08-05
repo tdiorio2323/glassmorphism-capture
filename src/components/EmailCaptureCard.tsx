@@ -28,7 +28,7 @@ const EmailCaptureCard = () => {
     const processLogo = async () => {
       try {
         // Load the original logo image
-        const response = await fetch('/lovable-uploads/8d6e461e-4393-46d0-9bcc-632a4947a7c2.png');
+        const response = await fetch('/lovable-uploads/8c8a62bd-1521-47f1-90f9-94a4b828322c.png');
         const blob = await response.blob();
         const imageElement = await loadImage(blob);
         
@@ -41,7 +41,7 @@ const EmailCaptureCard = () => {
       } catch (error) {
         console.error('Failed to process logo:', error);
         // Fallback to original image
-        setLogoUrl('/lovable-uploads/8d6e461e-4393-46d0-9bcc-632a4947a7c2.png');
+        setLogoUrl('/lovable-uploads/8c8a62bd-1521-47f1-90f9-94a4b828322c.png');
       }
     };
 
@@ -65,7 +65,7 @@ const EmailCaptureCard = () => {
             <img 
               src={logoUrl} 
               alt="Quick Printz Logo" 
-              className="max-w-[200px] max-h-[100px] object-contain"
+              className="max-w-[400px] max-h-[200px] object-contain"
             />
           )}
         </div>
